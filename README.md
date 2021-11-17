@@ -7,7 +7,7 @@ DEV/ED : Pavan Ananth Sharma
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Random Number Generation ####
-The first problem I had to tackle was random number generation. I decided to use Haskell's <i> System.Random </i> to generate the number. I knew that the generator wouldn't be cryptographically secure, but certainly sufficient for educational purposes. I used the simple <i> randomRIO (m, n) </i> method to generate a random number in the range <i> m </i> to <i> n </i>. 
+The first problem we will have to tackle is random number generation. So we decided to use Haskell's <i> System.Random </i> to generate the number. So we know that the generator wouldn't be cryptographically secure, but certainly sufficient for educational purposes. So we used the simple <i> randomRIO (m, n) </i> method to generate a random number in the range <i> m </i> to <i> n </i>. 
 ````haskell
 -- Uses System.Random to get a random Integer between m and n inclusive
 randomInteger :: Integer -> Integer -> IO Integer
