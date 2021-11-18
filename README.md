@@ -122,7 +122,7 @@ decrypt c (d, n) = (fullMod (c^d) n)
 ````
 
 #### Lesson's Learned and Interesting Observations ####
-All-together, my code ran fast and worked consistently. I only ran into issues when Haskell would time out when dealing with exponentiation on very large integers. Given that this code isn't meant to be used in a cryptographic setting, large numbers won't be necessary and thus this isn't much of a problem. A MUCH more intersting problem was the following idea illustrated in the code below:
+All-together, our code ran fast and worked consistently. We only ran into issues when Haskell would time out when dealing with exponentiation on very large integers. Given that this code isn't meant to be used in a cryptographic setting, large numbers won't be necessary and thus this isn't much of a problem. A MUCH more intersting problem was the following idea illustrated in the code below:
 ````haskell
 import System.Random
 foo _ = 
