@@ -65,7 +65,7 @@ getRandomPrime m n k =
 ````
 
 #### Getting the Key Pairs ####
-In the naive implementation of RSA generating the public key pair and the private key pair is simple. Here, I only calculate the public and private key exponents since it is easy to compute the modulus using the two prime numbers generated earlier. In order to do this I had to implement Euclid's GCD algorithm to calculate the public key exponent and Euclid's Extended Algorithm to calculate the private key exponent. I then created an encompassing method to generate the two key sets, commonly written as <i>(e,n)</i> and <i>(d,n)</i> where the former is the public key pair and the latter is the private key pair. 
+In the naive implementation of RSA generating the public key pair and the private key pair is simple. Here, we only calculate the public and private key exponents since it is easy to compute the modulus using the two prime numbers generated earlier. In order to do this we have to implement Euclid's GCD algorithm to calculate the public key exponent and Euclid's Extended Algorithm to calculate the private key exponent. Then created an encompassing method to generate the two key sets, commonly written as <i>(e,n)</i> and <i>(d,n)</i> where the former is the public key pair and the latter is the private key pair. 
 ````haskell
 -- Computes the greatest common denominator for a and b using Euclid's algorithm
 egcd :: Integer -> Integer -> Integer
