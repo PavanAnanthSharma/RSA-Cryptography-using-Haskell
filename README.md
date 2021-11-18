@@ -110,7 +110,7 @@ getRSAKeyPairs m n k =
 ````
 
 #### Encryption and Decryption ####
-My last step was to write a method for encryption and decryption. One can call <i>getRSAKeyPairs</i> to get the key pairs and then use the following functions.
+Our last step was to write a method for encryption and decryption. One can call <i>getRSAKeyPairs</i> to get the key pairs and then use the following functions.
 ````haskell
 -- Encrypts a message m using public key pair pbk=(e, n)
 encrypt :: Integer -> (Integer, Integer) -> Integer
